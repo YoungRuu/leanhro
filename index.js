@@ -91,7 +91,7 @@ function getEmbeddedTwitter() {
       url: 'https://cdn.syndication.twimg.com/timeline/profile',
       crossDomain: true,
       contentType: "javascript/json",
-      dateType: "json",
+      dateType: "jsonp",
       data: {
         callback: 'testing',
         dnt: false,
