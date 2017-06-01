@@ -1,3 +1,25 @@
+/*
+* jQuery easyShare plugin
+* Update on 28 december 2011
+* Version 1.0
+*
+* Licensed under GPL <http://en.wikipedia.org/wiki/GNU_General_Public_License>
+* Copyright (c) 2008, St�phane Litou <contact@mushtitude.com>
+* All rights reserved.
+*
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 !function(){Function&&Function.prototype&&Function.prototype.bind&&(/MSIE [678]/.test(navigator.userAgent)||(window.__twttr&&window.__twttr.widgets&&window.__twttr.widgets.loaded&&window.twttr.widgets.load&&window.twttr.widgets.load(),window.__twttr&&window.__twttr.widgets&&window.__twttr.widgets.init||!function(t){function e(n){if(r[n])return r[n].exports;var i=r[n]={exports:{},id:n,loaded:!1};return t[n].call(i.exports,i,i.exports,e),i.loaded=!0,i.exports}var n=window.__twttrll;window.__twttrll=function(r,o){for(var a,s,u=0,c=[];u<r.length;u++)s=r[u],i[s]&&c.push.apply(c,i[s]),i[s]=0;for(a in o)t[a]=o[a];for(n&&n(r,o);c.length;)c.shift().call(null,null,e)};var r={},i={0:0};return e.e=function(t,e){},e.e=function(t,n){if(0===i[t])return n.call(null,null,e);if(void 0!==i[t])i[t].push(n);else{i[t]=[n];var r=document.getElementsByTagName("head")[0],o=document.createElement("script");o.type="text/javascript",o.charset="utf-8",o.async=!0,o.onerror=function(){var e=i[t];for(o.onerror=null,delete i[t];e.length;)e.shift().call(null,new Error("failed to load chunk"))},o.src=e.p+"js/"+({1:"dm_button",2:"button",3:"grid",4:"moment",5:"periscope_on_air",6:"timeline",7:"tweet"}[t]||t)+"."+{1:"3733ff42632ef21c7251703b97a713dd",2:"fbaa419ee3b1f63d563b4dc1677c1aa4",3:"26ff87ca8c644a52f77b9e26799b9466",4:"aa12283a515e15576926dc1c0d9faccc",5:"454b953cf569d605ec3530b6b38b09aa",6:"f5dd213113d43f976c8a616c7319825a",7:"d3d43222534f3578c861bb67baf17e3c"}[t]+".js",r.appendChild(o)}},e.m=t,e.c=r,e.p="https://platform.twitter.com/",e(0)}([function(t,e,n){var r,i=n(1),o=n(9),a=n(12),s=n(14),u=n(16),c=n(17),d=n(31),f=n(29),l=n(41),h=n(248),p=n(34),m=n(259),v=n(260),g="_e";u.set("widgets.init",!0),s.set("init",!0),v(),r=new i,a.exposeReadyPromise(r.promise,s.base,g),s.set("widgets",h),s.set("widgets.load",l.load),s.set("events",f),u.init("host","platform.twitter.com"),m(function(){r.resolve(s.base),c.attachTo(o),d.start("widgets-js-load"),l.loadPage().then(function(){d.endAndTrack("render","widgets-js-load","page",{widget_origin:p.rootDocumentLocation(),widget_frame:p.isFramed()&&p.currentDocumentLocation()})})})},function(t,e,n){function r(){var t=this;this.promise=new i(function(e,n){t.resolve=e,t.reject=n})}var i=n(2);t.exports=r},function(t,e,n){var r=n(3).Promise,i=n(7),o=n(8);t.exports=o.hasPromiseSupport()?i.Promise:r},function(t,e,n){var r;(function(t){/*!
 	 * @overview es6-promise - a tiny implementation of Promises/A+.
 	 * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
